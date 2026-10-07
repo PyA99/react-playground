@@ -1,10 +1,18 @@
+import PieChart from "./components/MyPieChart";
+
 function App() {
   return (
     <div>
-      <h1>Hej React!</h1>
-      <p>Jag testar komponenter.</p>
+      <div className="container">
+        <h1>PieChart</h1>
+        <div className="row">
+          <div className="col-md-6">
+            <PieChart/>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default App
+export default App;
