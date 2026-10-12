@@ -1,7 +1,7 @@
 function Scope31() {
   return (
     <div>
-      <h2>Scope 2.1</h2>
+      <h2>Scope 3.1</h2>
     </div>
   );
 }
