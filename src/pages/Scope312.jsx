@@ -1,4 +1,4 @@
-import PieChart from "../components/MyPieChart";
+import PieChart from "../components/scope312/MyPieChart";
 
 function Scope312() {
   return (
