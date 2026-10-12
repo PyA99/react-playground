@@ -11,7 +11,7 @@ function Scope31() {
   const [selectedId, setSelectedId] = useState(1);
   return (
     <div>
-      <h2>Scope 3.1</h2>
+      <h2>Scope 3.1!</h2>
 
       <SupplierList 
       suppliers={suppliers}
