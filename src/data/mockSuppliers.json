@@ -1,0 +1,57 @@
+
+{
+  "3.1": {
+    "name": "Inköpta varor och tjänster",
+    "suppliers": [
+      {
+        "id": 1,
+        "name": "SECON VVS",
+        "category": "Elapparatur",
+        "country": "Sverige",
+        "total": 1840450
+      },
+      {
+        "id": 2,
+        "name": "DANISH CW",
+        "category": "Installation",
+        "country": "Danmark",
+        "total": 1280000
+      },
+      {
+        "id": 3,
+        "name": "SGS",
+        "category": "Tjänster",
+        "country": "Sverige",
+        "total": 1190000
+      },
+      {
+        "id": 4,
+        "name": "Q-FLOW",
+        "category": "Ventilation",
+        "country": "Sverige",
+        "total": 773000
+      },
+      {
+        "id": 5,
+        "name": "AMBIENTCARE",
+        "category": "Teknik",
+        "country": "Sverige",
+        "total": 771000
+      }
+    ]
+  },
+
+
+
+  "3.11" :
+  {
+
+  },
+
+
+
+  "3.12":
+  {
+
+  }
+}
