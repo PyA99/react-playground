@@ -43,10 +43,51 @@
 
 
 
-  "3.11" :
-  {
-
-  },
+  
+  
+    "3.11" :{
+      "name": "Användning av sålda produkter",
+      "unit": "kWh",
+      "period": { "from": "2025-01-01", "to": "2025-12-31" },
+      "products" : [
+       { 
+         "id": 1,
+         "name": "UV-lampor",
+         "quantity": 15,
+         "lifetimeYears": 1,
+         "consumptionPerYear": 5641
+       },
+       {
+         "id": 2,
+         "name": "DCW",
+         "quantity": 9,
+         "lifetimeYears": 10,
+         "consumptionPerYear": 713
+       },
+       {
+         "id": 3,
+         "name": "Fläktar/pumpar",
+         "quantity": 25,
+         "lifetimeYears": 15,
+         "consumptionPerYear": 1645
+       },
+       {
+         "id": 4,
+         "name": "SECON Lagur",
+         "quantity": 20,
+         "lifetimeYears": 10,
+         "consumptionPerYear": 114
+       },
+       {
+         "id": 5,
+         "name": "DUC",
+         "quantity": 10,
+         "lifetimeYears": 15,
+         "consumptionPerYear": 175
+       }
+     ]
+    },
+  
 
   "3.12" :
   {
