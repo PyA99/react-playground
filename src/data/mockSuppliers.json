@@ -48,10 +48,110 @@
 
   },
 
-
-
-  "3.12":
+  "3.12" :
   {
-
+    "name": "Slutbehandling av sålda produkter",
+    "sold product": [
+      {
+        "id": 1,
+        "name": "Ventilationsaggregat",
+        "quantity": 2,
+        "materials": [
+          { "name": "Stål", "kg": 40 },
+          { "name": "Aluminium", "kg": 10 },
+          { "name": "Plast", "kg": 5 }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Värmepump luft-vatten",
+        "quantity": 3,
+        "materials": [
+          { "name": "Stål", "kg": 50 },
+          { "name": "Koppar", "kg": 12 },
+          { "name": "Aluminium", "kg": 8 },
+          { "name": "Plast", "kg": 4 }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Ventilationskanaler",
+        "quantity": 10,
+        "materials": [
+          { "name": "Galvaniserat stål", "kg": 4 }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Vattenburen radiator",
+        "quantity": 8,
+        "materials": [
+          { "name": "Stål", "kg": 15 },
+          { "name": "Plast", "kg": 1 }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Frånluftsfläkt",
+        "quantity": 5,
+        "materials": [
+          { "name": "Stål", "kg": 6 },
+          { "name": "Aluminium", "kg": 3 },
+          { "name": "Plast", "kg": 2 }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Värmeväxlare",
+        "quantity": 4,
+        "materials": [
+          { "name": "Aluminium", "kg": 18 },
+          { "name": "Koppar", "kg": 10 },
+          { "name": "Stål", "kg": 4 }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Cirkulationspump",
+        "quantity": 6,
+        "materials": [
+          { "name": "Gjutjärn", "kg": 4 },
+          { "name": "Rostfritt stål", "kg": 2 },
+          { "name": "Plast", "kg": 1 }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Luftfilter för ventilationssystem",
+        "quantity": 20,
+        "materials": [
+          { "name": "Plast", "kg": 0.5 },
+          { "name": "Syntetfiber", "kg": 0.8 },
+          { "name": "Stål", "kg": 0.2 }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Expansionskärl",
+        "quantity": 4,
+        "materials": [
+          { "name": "Stål", "kg": 10 },
+          { "name": "Gummi", "kg": 2 }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Isolerade kopparrör",
+        "quantity": 12,
+        "materials": [
+          { "name": "Koppar", "kg": 2 },
+          { "name": "Polyeten", "kg": 0.5 }
+        ]
+      }
+    ]
   }
+
+
+
+
 }
