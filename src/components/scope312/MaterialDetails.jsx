@@ -1,4 +1,5 @@
 import { getMaterialDetails } from "../../utils/materialCalculations";
+import MaterialBarChart from "./MyBarChart";
 
 function MaterialDetails({ materialName, onBack }) {
   const products = getMaterialDetails(materialName);
@@ -24,6 +25,7 @@ return (
         Total mängd:{" "}
         <strong>{totalKg.toLocaleString("sv-SE")} kg</strong>
       </p>
+      <MaterialBarChart products={products} materialName={materialName}/>
 
       <h4>Produkter som innehåller materialet</h4>
 
