@@ -1,6 +1,6 @@
 import { getMaterialTotals } from "../../utils/materialCalculations";
 
-function MyTable() {
+function MyTable({onSelectMaterial}) {
   const totals = getMaterialTotals();
 
     return (
@@ -15,7 +15,14 @@ function MyTable() {
             <tbody>
                 {Object.entries(totals).map(([material, kg]) => (
                     <tr key={material}>
-                        <td>{material}</td>
+                        <td>
+                            <button
+                                type="button"
+                                className="btn p-0 text-dark text-decoration-none"
+                                onClick={() => onSelectMaterial(material)}>
+                                {material}
+                            </button>
+                        </td>
                         <td>{kg.toLocaleString("sv-SE")}</td>
                     </tr>
                 ))}
@@ -23,5 +30,4 @@ function MyTable() {
         </table>
     );
 }
-
 export default MyTable;

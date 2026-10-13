@@ -148,7 +148,50 @@
           { "name": "Polyeten", "kg": 0.5 }
         ]
       }
-    ]
+    ],
+    "environmentalFacts": [
+      {
+      "id": 1,
+      "fact": "Stål kan återvinnas många gånger utan att förlora särskilt mycket av sina egenskaper.",
+      "icon": "recycle"
+      },
+      {
+      "id": 2,
+      "fact": "Återvinning av aluminium kräver betydligt mindre energi än att framställa nytt aluminium från malm.",
+      "icon": "zap"
+      },
+      {
+      "id": 3,
+      "fact": "Koppar är en värdefull metall som kan återvinnas och användas på nytt i exempelvis rör och elektriska komponenter.",
+      "icon": "refresh-cw"
+      },
+      {
+      "id": 4,
+      "fact": "Olika plastsorter behöver ofta sorteras separat eftersom de inte alltid kan återvinnas tillsammans.",
+      "icon": "recycle"
+      },
+      {
+      "id": 5,
+      "fact": "Produkter som är enkla att demontera kan göra det lättare att reparera, sortera och återvinna material.",
+      "icon": "wrench"
+      },
+      {
+      "id": 6,
+      "fact": "Att förlänga en produkts livslängd kan minska behovet av nya råmaterial och nytillverkning.",
+      "icon": "leaf"
+      },
+      {
+      "id": 7,
+      "fact": "Produktens miljöpåverkan beror inte bara på materialet, utan även på tillverkning, transporter, användning och vad som händer när produkten blir avfall.",
+      "icon": "globe"
+      },
+      {
+      "id": 8,
+      "fact": "Att återanvända en fungerande komponent kan ibland spara mer resurser än att återvinna materialet direkt.",
+      "icon": "refresh-cw"
+      }
+      ]
+
   }
 
 
