@@ -16,3 +16,27 @@ export function getMaterialTotals() {
     return result;
   }, {});
 }
+
+export function getMaterialDetails(materialName) {
+  const products = data["3.12"]["sold product"];
+
+  return products
+    .filter((product) =>
+      product.materials.some(
+        (material) => material.name === materialName
+      )
+    )
+    .map((product) => {
+      const material = product.materials.find(
+        (material) => material.name === materialName
+      );
+
+      return {
+        id: product.id,
+        productName: product.name,
+        quantity: product.quantity,
+        kgPerProduct: material.kg,
+        totalKg: material.kg * product.quantity,
+      };
+    });
+}
