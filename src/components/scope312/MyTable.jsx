@@ -1,21 +1,7 @@
-
-import data from "../../data/mockSuppliers.json"
+import { getMaterialTotals } from "../../utils/materialCalculations";
 
 function MyTable() {
-    const products = data["3.12"]["sold product"];
-
-    const totals = products.reduce((result, product) => { 
-        product.materials.forEach(material => {
-            if (!result[material.name]) {
-                result[material.name] = 0;
-            }
-
-            result[material.name] +=
-                material.kg * product.quantity;
-        });
-
-        return result;
-    }, {});
+  const totals = getMaterialTotals();
 
     return (
         <table className="table table-success table-striped">
