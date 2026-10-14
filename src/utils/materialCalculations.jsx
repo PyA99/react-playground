@@ -1,6 +1,8 @@
 import data from "../data/mockSuppliers.json";
 
 export function getMaterialTotals() {
+// Denna funktion hämtar och summerar den totala materialvikten per material.
+// Den returnerar ett objekt där varje materialnamn kopplas till den sammanlagda vikten,för alla sålda produkter.
   const products = data["3.12"]["sold product"];
 
   return products.reduce((result, product) => {
@@ -18,6 +20,8 @@ export function getMaterialTotals() {
 }
 
 export function getMaterialDetails(materialName) {
+// Denna funktion tar emot materialName som är själva materialet,
+// Och returnerar material och produkt-info för alla produkter som består av det materialet
   const products = data["3.12"]["sold product"];
 
   return products
@@ -39,4 +43,14 @@ export function getMaterialDetails(materialName) {
         totalKg: material.kg * product.quantity,
       };
     });
+}
+
+export function getMaterialTotalKg(materialName) {
+//Denna funktion beräknar den totala vikten för ett specifikt material
+  const products = getMaterialDetails(materialName);
+
+  return products.reduce(
+    (sum, product) => sum + product.totalKg,
+    0
+  );
 }

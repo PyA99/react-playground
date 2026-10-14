@@ -17,9 +17,10 @@ const data = Object.entries(totals).map(([name, value]) => ({
   value,
 }));
 
+//Allt detta fram till markering är skapandet av pajdiagrammet
 const RADIAN = Math.PI / 180;
 
-const COLORS = [
+const COLORS = [ // Färgerna återanvänds om det finns fler material än färger.
   "#0088FE",
   "#00C49F",
   "#FFBB28",
@@ -94,9 +95,10 @@ const MyCustomPie = (props) => {
       style={{ transition: "fill-opacity 0.3s ease" }}
     />
   );
-};
+};// Fram till hit
 
 function MyPieChart() {
+// Här stoppar vi in den riktiga datan vi hämtade högst upp, i pajdiagrammet
   return (
     <PieChart width={400} height={400}>
       <Pie

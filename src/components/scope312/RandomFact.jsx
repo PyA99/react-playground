@@ -1,6 +1,7 @@
 import data from "../../data/mockSuppliers.json";
 
 function RandomFact() {
+// Denna funktion hämtar miljöfakta direkt från json filen och visar den i en alert-ruta
   const facts = data["3.12"].environmentalFacts;
 
   const randomIndex = Math.floor(Math.random() * facts.length);

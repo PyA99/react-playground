@@ -186,7 +186,7 @@
         "quantity": 12,
         "materials": [
           { "name": "Koppar", "kg": 2 },
-          { "name": "Polyeten", "kg": 0.5 }
+          { "name": "Stål", "kg": 0.5 }
         ]
       }
     ],

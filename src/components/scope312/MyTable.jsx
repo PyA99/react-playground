@@ -1,7 +1,10 @@
 import { getMaterialTotals } from "../../utils/materialCalculations";
 
-function MyTable({onSelectMaterial}) {
+function MyTable({onSelectMaterial}) { //Funktionen används när användaren klickar på ett material i tabellen.
   const totals = getMaterialTotals();
+ // Hämtar den summerade vikten för varje material från materialCalculations.
+ // och returnerar en tabell med datan
+ // Vid klick (onClick) skickas materialnamnet till onSelectMaterial  
 
     return (
         <table className="table table-success table-striped">
@@ -19,7 +22,7 @@ function MyTable({onSelectMaterial}) {
                             <button
                                 type="button"
                                 className="btn p-0 text-dark text-decoration-none"
-                                onClick={() => onSelectMaterial(material)}>
+                                onClick={() => onSelectMaterial(material)}> 
                                 {material}
                             </button>
                         </td>

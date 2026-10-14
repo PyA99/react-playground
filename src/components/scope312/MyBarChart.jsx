@@ -1,3 +1,5 @@
+// Denna komponent skapar ett stapeldiagram över mängden av ett visst material per produkt
+// Den hämtar inte data själv, utan tar emot produktdata och materialnamn via props från den komponent som använder den (materialDetails).
 import {
   BarChart,
   Bar,
