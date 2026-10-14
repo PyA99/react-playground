@@ -1,8 +1,17 @@
 import PieChart from "../components/scope312/MyPieChart";
 import MyTable from "../components/scope312/MyTable";
 import RandomFact from "../components/scope312/RandomFact";
+import { getMaterialTotals } from "../utils/materialCalculations";
 
-function Scope312({ onSelectMaterial }) {
+function Scope312({ onSelectMaterial, onSelect }) {
+  const totals = getMaterialTotals();
+
+  const chartData = Object.entries(totals).map(
+    ([name, value]) => ({
+      name,
+      value,
+    })
+  );
   return (
     <div>
       <h2>Scope 3.12</h2>
@@ -13,7 +22,14 @@ function Scope312({ onSelectMaterial }) {
             <MyTable onSelectMaterial={onSelectMaterial}/>
           </div>
           <div class="col">
-            <PieChart />
+            <PieChart data={chartData} unit="kg" />
+            <button
+              type="button"
+              className="btn btn-info"
+              onClick={() => onSelect("topTen")}
+            >
+              Visa top 10 största avfall
+            </button>
           </div>
         </div>
       </div>

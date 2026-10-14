@@ -54,3 +54,30 @@ export function getMaterialTotalKg(materialName) {
     0
   );
 }
+
+export function getTopWasteProducts(limit = 10) {
+  const products = data["3.12"]["sold product"];
+
+  return products
+    .map((product) => {
+      // Summerar vikten av alla material i en produkt.
+      const kgPerProduct = product.materials.reduce(
+        (sum, material) => sum + material.kg,
+        0
+      );
+
+      const totalKg = kgPerProduct * product.quantity;
+
+      return {
+        id: product.id,
+        name: product.name,
+        quantity: product.quantity,
+        kgPerProduct,
+        totalKg,
+      };
+    })
+    // Sorterar produkterna från högst till lägst total materialvikt.
+    .sort((a, b) => b.totalKg - a.totalKg)
+    // Returnerar top 10.
+    .slice(0, limit);
+}
